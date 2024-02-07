@@ -1,14 +1,12 @@
 {
-    "name": "@bambooapp/react-hooks/usePrevious",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "publishConfig": {
-      "main": "./index.js",
-      "module": "./index.js",
-      "types": "../types/packages/usePrevious/index.d.ts"
+        "main": "./index.js",
+        "module": "./index.js",
+        "types": "../types/packages/usePrevious/index.d.ts"
     },
     "typings": "../types/packages/usePrevious/index.d.ts",
     "license": "MIT",
     "sideEffects": false
-  }
-  
+}

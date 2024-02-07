@@ -12,10 +12,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bambooapp/react-hooks@workspace:.":
+"@bambooapp/react-hooks@workspace:., @bambooapp/react-hooks@workspace:^":
   version: 0.0.0-use.local
   resolution: "@bambooapp/react-hooks@workspace:."
   dependencies:
+    "@bambooapp/react-hooks": "workspace:^"
     "@types/eslint": "npm:^8"
     "@types/lodash": "npm:^4"
     "@types/react": "npm:^18.2.45"
@@ -1356,6 +1357,36 @@ __metadata:
   checksum: 10c0/4ef57b45aa820d7ac6496e9208559986c665e49447cb072744c13b66925a362d96dd5a46c4530a6b8e203e5db5fe849369444440cb22ecfc26c679359e5dfa3c
   languageName: node
   linkType: hard
+
+"useLatest-cf0f2f@workspace:packages/useLatest":
+  version: 0.0.0-use.local
+  resolution: "useLatest-cf0f2f@workspace:packages/useLatest"
+  languageName: unknown
+  linkType: soft
+
+"useMergeRefs-9a5ce3@workspace:packages/useMergeRefs":
+  version: 0.0.0-use.local
+  resolution: "useMergeRefs-9a5ce3@workspace:packages/useMergeRefs"
+  languageName: unknown
+  linkType: soft
+
+"usePrevious-3b28f6@workspace:packages/usePrevious":
+  version: 0.0.0-use.local
+  resolution: "usePrevious-3b28f6@workspace:packages/usePrevious"
+  languageName: unknown
+  linkType: soft
+
+"useSafeCallback-b1afd1@workspace:packages/useSafeCallback":
+  version: 0.0.0-use.local
+  resolution: "useSafeCallback-b1afd1@workspace:packages/useSafeCallback"
+  languageName: unknown
+  linkType: soft
+
+"useWhatHasUpdated-311d1e@workspace:packages/useWhatHasUpdated":
+  version: 0.0.0-use.local
+  resolution: "useWhatHasUpdated-311d1e@workspace:packages/useWhatHasUpdated"
+  languageName: unknown
+  linkType: soft
 
 "which@npm:^2.0.1":
   version: 2.0.2

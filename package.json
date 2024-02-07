@@ -1,6 +1,6 @@
 {
   "name": "@bambooapp/react-hooks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "type": "module",
   "publishConfig": {
@@ -14,6 +14,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@bambooapp/react-hooks": "workspace:^",
     "@types/eslint": "^8",
     "@types/lodash": "^4",
     "@types/react": "^18.2.45",
@@ -24,8 +25,7 @@
     "husky": "^9.0.10",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
-    "typescript": "^5.3.3",
-    "@bambooapp/react-hooks": "workspace:^"
+    "typescript": "^5.3.3"
   },
   "license": "MIT",
   "scripts": {
