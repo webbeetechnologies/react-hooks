@@ -1,0 +1,24 @@
+{
+  "name": "@bambooapp/react-hooks",
+  "version": "0.1.0",
+  "main": "index.js",
+  "publishConfig": {
+    "main": "./index.js",
+    "module": "./index.js",
+    "types": "./types/index.d.ts"
+  },
+  "typings": "./types/index.d.ts",
+  "packageManager": "yarn@4.1.0",
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "@types/lodash": "^4",
+    "@types/react": "^18.2.45",
+    "eslint": "^8.56.0",
+    "husky": "^9.0.10",
+    "react": "^18.2.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "esnext",
+      "allowJs": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "declarationMap": true,
+      "outDir": "./types"
+    },
+    "include": ["packages/**/*", "index.js"]
+}
+  
