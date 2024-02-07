@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /**
  * @function
@@ -7,13 +7,16 @@ import React from "react";
  * @returns {React.MutableRefObject<T>}
  */
 
-export const usePrevious = (value) => {
+export const usePrevious = value => {
     const ref = React.useRef(value);
 
     React.useEffect(() => {
-        requestIdleCallback(() => {
-            ref.current = value;
-        }, { timeout: 1 })
+        requestIdleCallback(
+            () => {
+                ref.current = value;
+            },
+            { timeout: 1 },
+        );
     });
 
     React.useEffect(() => () => {
@@ -21,6 +24,6 @@ export const usePrevious = (value) => {
     });
 
     return ref;
-}
+};
 
 export default usePrevious;

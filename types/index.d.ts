@@ -1,5 +1,6 @@
-export * from "./packages/useLatest";
-export * from "./packages/usePrevious";
-export * from "./packages/useSafeCallback";
-export * from "./packages/useMergeRefs";
+export * from "./useLatest";
+export * from "./usePrevious";
+export * from "./useSafeCallback";
+export * from "./useWhatHasUpdated";
+export * from "./useMergeRefs";
 //# sourceMappingURL=index.d.ts.map

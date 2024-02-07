@@ -1,0 +1,13 @@
+{
+  "name": "@bambooapp/react-hooks/useLatest",
+  "version": "0.1.0",
+  "description": "",
+  "publishConfig": {
+    "main": "./index.js",
+    "module": "./index.js",
+    "types": "../types/useLatest/index.d.ts"
+  },
+  "typings": "../types/useLatest/index.d.ts",
+  "license": "MIT",
+  "sideEffects": false
+}

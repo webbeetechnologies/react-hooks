@@ -1,0 +1,13 @@
+{
+  "name": "@bambooapp/react-hooks/useMergeRefs",
+  "version": "0.1.0",
+  "description": "",
+  "publishConfig": {
+    "main": "./index.js",
+    "module": "./index.js",
+    "types": "../types/useMergeRefs/index.d.ts"
+  },
+  "typings": "../types/useMergeRefs/index.d.ts",
+  "license": "MIT",
+  "sideEffects": false
+}

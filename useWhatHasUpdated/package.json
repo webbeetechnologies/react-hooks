@@ -1,0 +1,14 @@
+{
+    "name": "@bambooapp/react-hooks/useWhatHasUpdated",
+    "version": "0.1.0",
+    "description": "",
+    "publishConfig": {
+      "main": "./index.js",
+      "module": "./index.js",
+      "types": "../types/useWhatHasUpdated/index.d.ts"
+    },
+    "typings": "../types/useWhatHasUpdated/index.d.ts",
+    "license": "MIT",
+    "sideEffects": false
+  }
+  

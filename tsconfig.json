@@ -8,6 +8,6 @@
       "declarationMap": true,
       "outDir": "./types"
     },
-    "include": ["packages/**/*", "index.js"]
+    "include": ["packages/**/*", "index.js", "useLatest", "useMergeRefs", "usePrevious", "useSafeCallback", "useWhatHasUpdated"]
 }
   

@@ -1,2 +1,3 @@
+npm lint
 npx -p typescript tsc -p ./tsconfig.json
 git add ./types

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /**
  * @function
@@ -7,16 +7,15 @@ import React from "react";
  * @returns {React.MutableRefObject<T>}
  */
 
-export const useLatest = (value) => {
+export const useLatest = value => {
     const ref = React.useRef(value);
     ref.current = value;
 
     React.useEffect(() => () => {
-
         ref.current = /** @type {T} */ (null);
     });
 
     return ref;
-}
+};
 
 export default useLatest;
