@@ -5,9 +5,9 @@
     "publishConfig": {
       "main": "./index.js",
       "module": "./index.js",
-      "types": "../types/useWhatHasUpdated/index.d.ts"
+      "types": "../types/packages/useWhatHasUpdated/index.d.ts"
     },
-    "typings": "../types/useWhatHasUpdated/index.d.ts",
+    "typings": "../types/packages/useWhatHasUpdated/index.d.ts",
     "license": "MIT",
     "sideEffects": false
   }

@@ -1,13 +1,13 @@
 {
-    "name": "@bambooapp/react-hooks/useSafeCallback",
+    "name": "@bambooapp/react-hooks/usePrevious",
     "version": "0.1.0",
     "description": "",
     "publishConfig": {
       "main": "./index.js",
       "module": "./index.js",
-      "types": "../types/useSafeCallback/index.d.ts"
+      "types": "../types/packages/usePrevious/index.d.ts"
     },
-    "typings": "../types/useSafeCallback/index.d.ts",
+    "typings": "../types/packages/usePrevious/index.d.ts",
     "license": "MIT",
     "sideEffects": false
   }

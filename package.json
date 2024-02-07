@@ -10,6 +10,9 @@
   },
   "typings": "./types/index.d.ts",
   "packageManager": "yarn@4.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@types/eslint": "^8",
     "@types/lodash": "^4",
@@ -21,7 +24,8 @@
     "husky": "^9.0.10",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@bambooapp/react-hooks": "workspace:^"
   },
   "license": "MIT",
   "scripts": {
