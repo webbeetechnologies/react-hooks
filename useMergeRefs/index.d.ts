@@ -18,4 +18,3 @@ export default useMergedRefs;
  * <T>
  */
 export type RefType<T extends unknown> = import('react').MutableRefObject<T> | import('react').LegacyRef<T> | undefined | null;
-import React from "react";

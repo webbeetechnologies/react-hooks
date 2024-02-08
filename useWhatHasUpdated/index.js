@@ -1,4 +1,5 @@
 import useLatest from '@bambooapp/react-hooks/useLatest';
+import usePrevious from '@bambooapp/react-hooks/usePrevious';
 import { useEffect, useMemo } from 'react';
 
 const map = new Map();
@@ -64,11 +65,14 @@ export const whatHasUpdatedFactory = (
  */
 export const useWhatHasUpdated = (name, props) => {
     const argRef = useLatest({ name, props });
+    const prevRef = usePrevious(props);
     const checkFunc = useMemo(
         () => whatHasUpdatedFactory(argRef.current.name, argRef.current.props),
         [argRef],
     );
+
     useEffect(() => {
+        if (props === prevRef.current) return;
         checkFunc(props);
     });
 };

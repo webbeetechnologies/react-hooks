@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
  * @function
  * @template T
  * @param {T} value
- * @returns {import('react')MutableRefObject<T>}
+ * @returns {import('react').MutableRefObject<T>}
  */
 
 export const usePrevious = value => {

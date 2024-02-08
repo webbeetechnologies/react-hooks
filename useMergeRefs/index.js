@@ -1,5 +1,4 @@
-import { useCallback } from 'react';
-import useLatest from '@bambooapp/react-hooks/useLatest';
+import useSafeCallback from '@bambooapp/react-hooks/useSafeCallback';
 /**
  *
  * @typedef {import('react').MutableRefObject<T> | import('react').LegacyRef<T> | undefined | null} RefType<T>
@@ -21,7 +20,7 @@ export function mergeRefs(...refs) {
             if (typeof ref === 'function') {
                 ref(value);
             } else if (ref != null) {
-                /** @type {import('react')MutableRefObject<T | null>}*/ ref.current = value;
+                /** @type {import('react').MutableRefObject<T | null>}*/ ref.current = value;
             }
         });
     };
@@ -35,13 +34,9 @@ export function mergeRefs(...refs) {
  * @returns {(value: T) => void}
  */
 export const useMergedRefs = (...refs) => {
-    const latestRefs = useLatest([refs].flat());
-    return useCallback(
-        value => {
-            mergeRefs(latestRefs.current)(value);
-        },
-        [latestRefs],
-    );
+    return useSafeCallback(value => {
+        mergeRefs(...[refs].flat())(value);
+    });
 };
 
 export default useMergedRefs;
