@@ -5,4 +5,3 @@ export type Config = {
     debug?: boolean;
     useCached?: boolean;
 };
-//# sourceMappingURL=index.d.ts.map

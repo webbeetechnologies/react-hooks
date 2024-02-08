@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "rootDir": "./",
+      "target": "esnext",
+      "allowJs": true,
+      "checkJs": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "moduleResolution": "Node",
+      "lib": ["esnext"],
+      "typeRoots": ["./node_modules/@types"],
+      "skipLibCheck": true,
+      "skipDefaultLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+        "@bambooapp/react-hooks/*": ["."],
+      }
+    },
+}
+  

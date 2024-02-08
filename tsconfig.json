@@ -1,13 +1,5 @@
 {
-    "compilerOptions": {
-      "module": "CommonJS",
-      "target": "esnext",
-      "allowJs": true,
-      "declaration": true,
-      "emitDeclarationOnly": true,
-      "declarationMap": true,
-      "outDir": "./types"
-    },
-    "include": ["packages/**/*", "index.js", "packages/useLatest", "packages/useMergeRefs", "packages/usePrevious", "packages/useSafeCallback", "packages/useWhatHasUpdated"]
+    "extends": "./tsconfig.base.json",
+    "include": ["./index.js", "./*use*/**.js", "./index.ts", "./*use*/**.ts"],
+    "exclude": ["*.d.ts*"],
 }
-  

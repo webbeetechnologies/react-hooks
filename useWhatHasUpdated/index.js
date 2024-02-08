@@ -1,4 +1,4 @@
-import { useLatest } from '@bambooapp/bamboo-molecules';
+import useLatest from '@bambooapp/react-hooks/useLatest';
 import { useEffect, useMemo } from 'react';
 
 const map = new Map();

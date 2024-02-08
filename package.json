@@ -1,35 +1,38 @@
 {
   "name": "@bambooapp/react-hooks",
   "version": "0.1.1",
-  "main": "index.js",
+  "main": "./index.js",
   "type": "module",
   "publishConfig": {
     "main": "./index.js",
     "module": "./index.js",
-    "types": "./types/index.d.ts"
+    "types": "./index.d.ts"
   },
-  "typings": "./types/index.d.ts",
+  "typings": "./index.d.ts",
   "packageManager": "yarn@4.1.0",
   "workspaces": [
-    "packages/*"
+    "./use*"
   ],
   "devDependencies": {
-    "@bambooapp/react-hooks": "workspace:^",
     "@types/eslint": "^8",
     "@types/lodash": "^4",
     "@types/react": "^18.2.45",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "husky": "^9.0.10",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
-    "typescript": "^5.3.3"
+    "typescript": "^4.9.5"
   },
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "type-check": "tsc",
+    "compile": "npx -p typescript tsc -p ./tsconfig.json",
+    "build:types": "yarn workspaces foreach --all run compile"
   }
 }

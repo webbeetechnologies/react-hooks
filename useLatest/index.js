@@ -1,17 +1,17 @@
-import React from 'react';
+import { useRef, useEffect } from 'react';
 
 /**
  * @function
  * @template T
  * @param {T} value
- * @returns {React.MutableRefObject<T>}
+ * @returns {import('react').MutableRefObject<T>}
  */
 
 export const useLatest = value => {
-    const ref = React.useRef(value);
+    const ref = useRef(value);
     ref.current = value;
 
-    React.useEffect(() => () => {
+    useEffect(() => () => {
         ref.current = /** @type {T} */ (null);
     });
 

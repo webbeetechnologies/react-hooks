@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
-import { useLatest } from '@bambooapp/react-hooks/useLatest';
+import useLatest from '@bambooapp/react-hooks/useLatest';
 /**
  *
- * @typedef {React.MutableRefObject<T> | React.LegacyRef<T> | undefined} RefType<T>
+ * @typedef {import('react').MutableRefObject<T> | import('react').LegacyRef<T> | undefined | null} RefType<T>
  * @template {unknown} T
  *
  * */
@@ -17,10 +17,11 @@ import { useLatest } from '@bambooapp/react-hooks/useLatest';
 export function mergeRefs(...refs) {
     return value => {
         [refs].flat().forEach(ref => {
+            if (!ref) return;
             if (typeof ref === 'function') {
                 ref(value);
             } else if (ref != null) {
-                /** @type {React.MutableRefObject<T | null>}*/ ref.current = value;
+                /** @type {import('react')MutableRefObject<T | null>}*/ ref.current = value;
             }
         });
     };
@@ -42,3 +43,5 @@ export const useMergedRefs = (...refs) => {
         [latestRefs],
     );
 };
+
+export default useMergedRefs;

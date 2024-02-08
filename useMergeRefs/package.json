@@ -1,0 +1,15 @@
+{
+  "version": "0.1.1",
+  "description": "",
+  "publishConfig": {
+    "main": "./index.js",
+    "module": "./index.js",
+    "types": "./index.d.ts"
+  },
+  "typings": "./index.d.ts",
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "compile": "npx -p typescript tsc -p ./tsconfig.compile.json"
+  }
+}

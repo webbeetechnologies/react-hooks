@@ -1,16 +1,16 @@
-import React from 'react';
+import { useEffect, useRef } from 'react';
 
 /**
  * @function
  * @template T
  * @param {T} value
- * @returns {React.MutableRefObject<T>}
+ * @returns {import('react')MutableRefObject<T>}
  */
 
 export const usePrevious = value => {
-    const ref = React.useRef(value);
+    const ref = useRef(value);
 
-    React.useEffect(() => {
+    useEffect(() => {
         requestIdleCallback(
             () => {
                 ref.current = value;
@@ -19,7 +19,7 @@ export const usePrevious = value => {
         );
     });
 
-    React.useEffect(() => () => {
+    useEffect(() => () => {
         ref.current = /** @type {T} */ (null);
     });
 
