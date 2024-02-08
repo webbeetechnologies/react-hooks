@@ -3,10 +3,9 @@ import useLatest from '../useLatest';
 
 /**
  *
- * @template Args
- * @template Returns
- * @param {(...args: Args[]) => Returns} func
- * @returns {(...args: Args[]) => Returns}
+ * @template  {function} T
+ * @param {T} func
+ * @returns {T}
  */
 
 export const useSafeCallback = func => {
