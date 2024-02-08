@@ -16,5 +16,6 @@
         "@bambooapp/react-hooks/*": ["."],
       }
     },
+    "exclude": ["/**/*.d.ts*", "/**/*.d.ts"]
 }
   

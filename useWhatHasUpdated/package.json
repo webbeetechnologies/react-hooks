@@ -10,6 +10,6 @@
   "license": "MIT",
   "sideEffects": false,
   "scripts": {
-    "compile": "npx -p typescript tsc -p ./tsconfig.compile.json"
+    "compile": "npx -p typescript tsc -p ./tsconfig.compile.json --pretty --removeComments"
   }
 }

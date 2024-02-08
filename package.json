@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "main": "./index.js",
   "type": "module",
-  "private": "false",
   "publishConfig": {
+    "access": "public",
     "main": "./index.js",
     "module": "./index.js",
     "types": "./index.d.ts"
   },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webbeetechnologies/bamboo-molecules.git"
+},
   "typings": "./index.d.ts",
   "packageManager": "yarn@4.1.0",
   "workspaces": [
@@ -34,6 +39,6 @@
     "prepare": "husky",
     "type-check": "tsc",
     "compile": "npx -p typescript tsc -p ./tsconfig.json",
-    "build:types": "yarn workspaces foreach --all run compile"
+    "build:types": "yarn workspaces foreach --all --include @bambooapp/react-hooks run compile --pretty --removeComments"
   }
 }
