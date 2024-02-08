@@ -11,9 +11,12 @@ export const useLatest = value => {
     const ref = useRef(value);
     ref.current = value;
 
-    useEffect(() => () => {
-        ref.current = /** @type {T} */ (null);
-    });
+    useEffect(
+        () => () => {
+            ref.current = /** @type {T} */ (null);
+        },
+        [],
+    );
 
     return ref;
 };

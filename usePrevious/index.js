@@ -19,9 +19,12 @@ export const usePrevious = value => {
         );
     });
 
-    useEffect(() => () => {
-        ref.current = /** @type {T} */ (null);
-    });
+    useEffect(
+        () => () => {
+            ref.current = /** @type {T} */ (null);
+        },
+        [],
+    );
 
     return ref;
 };
