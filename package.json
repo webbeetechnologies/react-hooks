@@ -1,6 +1,6 @@
 {
   "name": "@bambooapp/react-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./index.js",
   "type": "module",
   "publishConfig": {
@@ -9,11 +9,10 @@
     "module": "./index.js",
     "types": "./index.d.ts"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webbeetechnologies/bamboo-molecules.git"
-},
+  },
   "typings": "./index.d.ts",
   "packageManager": "yarn@4.1.0",
   "workspaces": [
