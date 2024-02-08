@@ -42,10 +42,10 @@ export const whatHasUpdatedFactory = (
     return nextObject => {
         const old = getPrev();
         const changes = Object.keys({ ...nextObject, ...old }).reduce((all, key) => {
-            const newValue = nextObject?.[key];
+            const newValue = nextObject && nextObject[key];
             const oldValue = old[key];
             if (oldValue === newValue) return all;
-            return { ...all, [key]: { newValue, oldValue } };
+            return Object.assign(all, { [key]: { newValue, oldValue } });
         }, {});
 
         setPrev(nextObject);
