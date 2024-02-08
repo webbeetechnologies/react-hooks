@@ -3,4 +3,4 @@
 !index.d.ts
 !index.d.ts.map
 !package.json
-!./use*
+!use*
