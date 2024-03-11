@@ -14,7 +14,8 @@ export const useSafeCallback = func => {
         throw new Error('useSafeCallback accepts exactly one argument of type function');
 
     return useCallback((...args) => {
-        return latestFunc.current(...args);
+        // there is a posibility that the latest function has been called AFTER unmount.
+        return latestFunc.current?.(...args);
     }, []);
 };
 
