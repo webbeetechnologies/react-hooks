@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webbeetechnologies/bamboo-molecules.git"
+    "url": "git+https://github.com/webbeetechnologies/bamboo-hooks.git"
   },
   "typings": "./index.d.ts",
   "packageManager": "yarn@4.1.0",
