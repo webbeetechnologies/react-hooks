@@ -11,6 +11,11 @@ export const usePrevious = value => {
     const ref = useRef(value);
 
     useEffect(() => {
+        const requestIdleCallback =
+            'requestIdleCallback' in globalThis
+                ? globalThis.requestIdleCallback
+                : (func, { timeout }) => setTimeout(func, timeout);
+
         requestIdleCallback(
             () => {
                 ref.current = value;
